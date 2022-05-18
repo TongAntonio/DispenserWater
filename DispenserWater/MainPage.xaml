@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DispenserWater"
+             x:Class="DispenserWater.MainPage">
+
+    <ContentPage.Content>
+         <StackLayout VerticalOptions="Fill" HorizontalOptions="Fill" Orientation="Vertical" BackgroundColor="#F2F3F4">
+            <Image HeightRequest="300" WidthRequest="300" HorizontalOptions="Center"
+                   Source="IOT02.png"/>
+
+             <StackLayout Margin="20" BackgroundColor="White" HeightRequest="200">
+             <StackLayout x:Name="PleaseSignInLayout"  BackgroundColor="#D4D5D5" HeightRequest="35" Padding="5,5,0,5" >
+                     <Label Text="Please Sign In" FontSize="Large" />
+             </StackLayout>
+             <StackLayout x:Name="UsernameLayout"  BackgroundColor="White" HeightRequest="80" Orientation="Vertical">
+
+                    <Entry x:Name="Username" Placeholder="Username" PlaceholderColor="#CCCCCC"
+                           HorizontalOptions="FillAndExpand" FontSize="20" Margin="10,0" />
+                  <Entry x:Name="Password" Placeholder="Password" PlaceholderColor="#CCCCCC" IsPassword="True"
+                           HorizontalOptions="FillAndExpand" FontSize="20" Margin="10,0" />
+             </StackLayout>
+                 
+                    <Button Text="Login" BackgroundColor="#04AA04" TextColor="White" FontSize="Medium"
+                            Margin="10,0" Clicked="Button_Clicked"  />
+
+<Label Text="สมัครสมาชิก" AnchorX="0.5" Margin="120,0,0,0"  />
+             </StackLayout>
+
+
+        <Button Text="Log in with Facebook" BackgroundColor="#3b5998" TextColor="White" Margin="20,0" Clicked="btnLoginFacebook_Clicked" x:Name="btnLoginFacebook"/>
+
+         </StackLayout>
+        
+
+    </ContentPage.Content>
+</ContentPage>

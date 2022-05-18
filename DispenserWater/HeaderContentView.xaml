@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    HeightRequest="170"
+    x:Class="DispenserWater.HeaderContentView">
+    <ContentView.Content>
+        <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Image Aspect="AspectFill" Source="BlueBackground.jpg" Grid.ColumnSpan="5" Grid.RowSpan="4" Opacity="0.6"></Image>
+            <Image HeightRequest="80" WidthRequest="80" Grid.Column="1" Grid.Row="1" HorizontalOptions="Start" VerticalOptions="End" x:Name="ImageProfile" x:Uid="ImageProfile">
+            </Image>
+
+            <StackLayout VerticalOptions="CenterAndExpand" Grid.Row="1" Margin="10,0,0,0" Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
+                <Label HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="White" x:Name="lblName" x:Uid="lblName"></Label>
+                 <Label HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="White" x:Name="lblEmail" x:Uid="lblEmail"></Label>
+            </StackLayout>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

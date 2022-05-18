@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DispenserWater"
+    x:Class="DispenserWater.Ordering2">
+    
+<ContentPage.Content>
+
+     <!--<ImageButton Source="glass1.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="60" x:Uid="btnGlass1" Clicked="btnGlass1_Clicked" />-->
+
+   <ScrollView Orientation="Vertical" HorizontalOptions="StartAndExpand" >
+    <Grid RowSpacing="10" ColumnSpacing="10" Margin="5,5,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="170"/>
+        </Grid.ColumnDefinitions>
+        <Frame Grid.Row="0" Grid.Column="0" Padding="10"  >
+            <StackLayout WidthRequest="130">
+                    <ImageButton  HeightRequest="40" Source="glass1.png" x:Name="btnGlass1" BackgroundColor="White" Clicked="btnGlass1_Clicked"   />
+                    <Label Text="1 แก้ว /~250 ml." HorizontalTextAlignment="Center"/>
+                 <Label Text="20 baht" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+            <Frame Grid.Row="1" Grid.Column="0" Padding="10">
+                 <StackLayout WidthRequest="130">
+                   <ImageButton  HeightRequest="40" Source="glass3.png" x:Name="btnGlass3"  BackgroundColor="White" Clicked="btnGlass3_Clicked"/>
+                   <Label Text="3 แก้ว /~750 มล." HorizontalTextAlignment="Center"/>
+                      <Label Text="60 baht" HorizontalTextAlignment="Center"/>
+                      </StackLayout>
+            </Frame>
+            <Frame Grid.Row="2" Grid.Column="0" Padding="10">
+                <StackLayout WidthRequest="130">
+                      <ImageButton  HeightRequest="50" Source="glass5.png" x:Name="btnGlass5"  BackgroundColor="White" Clicked="btnGlass5_Clicked"/>
+             <Label Text="5 แก้ว /~1250 มล." HorizontalTextAlignment="Center"/>
+                      <Label Text="100 baht" HorizontalTextAlignment="Center"/>
+                     </StackLayout>
+            </Frame>
+            <Frame Grid.Row="3" Grid.Column="0" Padding="10">
+                <StackLayout WidthRequest="130">
+                    <ImageButton  HeightRequest="50"  Source="glass7.png" x:Name="btnGlass7" BackgroundColor="White" Clicked="btnGlass7_Clicked"/>
+             <Label Text="7 แก้ว /~1750 มล." HorizontalTextAlignment="Center"/>
+                    <Label Text="140 baht" HorizontalTextAlignment="Center"/>
+                     </StackLayout>
+            </Frame>
+          <Frame Grid.Row="4" Grid.Column="0" Padding="10">
+               <StackLayout WidthRequest="130">
+                    <ImageButton  HeightRequest="50"  Source="glass9.png" x:Name="btnGlass9" BackgroundColor="White"  Clicked="btnGlass9_Clicked"/>
+             <Label Text="9 แก้ว /~2250 มล." HorizontalTextAlignment="Center"/>
+                    <Label Text="180 baht" HorizontalTextAlignment="Center"/>
+                     </StackLayout>
+            </Frame>
+            <Frame Grid.Row="0" Grid.Column="1" Padding="10">
+                 <StackLayout WidthRequest="130">
+                             <ImageButton  HeightRequest="40"  Source="glass2.png" x:Name="btnGlass2" BackgroundColor="White" Clicked="btnGlass2_Clicked"/>
+                            <Label Text="2 แก้ว /~500 มล." HorizontalTextAlignment="Start"/>
+                     <Label Text="40 baht" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="1" Grid.Column="1" Padding="10">
+                <StackLayout WidthRequest="130">
+                     <ImageButton  HeightRequest="50" Source="glass4.png" x:Name="btnGlass4" BackgroundColor="White" Clicked="btnGlass4_Clicked"/>
+             <Label Text="4 แก้ว /~1000 มล." HorizontalTextAlignment="Center"/>
+                    <Label Text="80 baht" HorizontalTextAlignment="Center"/>
+                     </StackLayout>
+            </Frame>
+            <Frame Grid.Row="2" Grid.Column="1" Padding="10">
+                <StackLayout WidthRequest="130">
+                    <ImageButton  HeightRequest="50"  Source="glass6.png" x:Name="btnGlass6" BackgroundColor="White" Clicked="btnGlass6_Clicked"/>
+             <Label Text="6 แก้ว /~1500 มล." HorizontalTextAlignment="Center"/>
+                         <Label Text="120 baht" HorizontalTextAlignment="Center"/>
+                     </StackLayout>
+            </Frame>
+            <Frame Grid.Row="3" Grid.Column="1" Padding="10">
+                <StackLayout WidthRequest="130">
+                     <ImageButton  HeightRequest="50"  Source="glass8.png" x:Name="btnGlass8" BackgroundColor="White" Clicked="btnGlass8_Clicked"/>
+             <Label Text="8 แก้ว /~2000 มล." HorizontalTextAlignment="Center"/>
+                    <Label Text="160 baht" HorizontalTextAlignment="Center"/>
+                     </StackLayout>
+            </Frame>
+         <Frame Grid.Row="4" Grid.Column="1" Padding="10">
+                <StackLayout WidthRequest="130">
+                       <ImageButton  HeightRequest="50"  Source="glass10.png" x:Name="btnGlass10" BackgroundColor="White" Clicked="btnGlass10_Clicked"/>
+             <Label Text="10 แก้ว /~2500 มล." HorizontalTextAlignment="Center"/>
+                      <Label Text="200 baht" HorizontalTextAlignment="Center"/>
+                     </StackLayout>
+            </Frame>
+        </Grid>
+    </ScrollView>
+
+ </ContentPage.Content>
+  
+</ContentPage>

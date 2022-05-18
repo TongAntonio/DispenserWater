@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.Facebook.iOS" Version="12.2.0" />
+    <PackageReference Include="Xamarin.Auth" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+    <PackageReference Include="NuGet.PackageManagement" Version="6.1.0" />
+    <PackageReference Include="SkiaSharp" Version="2.88.0-preview.256" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="2.88.0-preview.256" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.7" />
+    <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="FirebaseDatabase.net" />
+    <None Remove="Model\" />
+    <None Remove="Xamarin.Firebase.iOS.Core" />
+    <None Remove="Common\" />
+    <None Remove="Helper\" />
+    <None Remove="QRCoder" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Facebook" />
+    <None Remove="Xamarin.Facebook.iOS" />
+    <None Remove="bin\Debug\netstandard2.0\ref\DispenserWater.dll" />
+    <None Remove="bin\Debug\netstandard2.0\.DS_Store" />
+    <None Remove="bin\Debug\netstandard2.0\DispenserWater.deps.json" />
+    <None Remove="bin\Debug\netstandard2.0\DispenserWater.dll" />
+    <None Remove="bin\Debug\netstandard2.0\DispenserWater.pdb" />
+    <None Remove="bin\Debug\.DS_Store" />
+    <None Remove="bin\Release\netstandard2.0\ref\DispenserWater.dll" />
+    <None Remove="bin\Release\netstandard2.0\.DS_Store" />
+    <None Remove="bin\Release\netstandard2.0\DispenserWater.deps.json" />
+    <None Remove="bin\Release\netstandard2.0\DispenserWater.dll" />
+    <None Remove="bin\Release\.DS_Store" />
+    <None Remove="bin\.DS_Store" />
+    <None Remove="Xamarin.Auth" />
+    <None Remove="XtraReportsControls" />
+    <None Remove="Microcharts.Forms" />
+    <None Remove="Microcharts" />
+    <None Remove="SkiaSharp" />
+    <None Remove="SkiaSharp.Views" />
+    <None Remove="SkiaSharp.Views.Forms" />
+    <None Remove="Xamarin.Forms" />
+    <None Remove="NuGet.PackageManagement" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Common\" />
+    <Folder Include="Helper\" />
+  </ItemGroup>
+</Project>
